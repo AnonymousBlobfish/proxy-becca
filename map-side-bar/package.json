@@ -1,0 +1,55 @@
+{
+  "name": "map-side-bar",
+  "version": "1.0.0",
+  "description": "info sidebar with a map for WeGot restaurant review website",
+  "main": "server/index.js",
+  "scripts": {
+    "database": "mongod",
+    "seed-database": "node db/controllers/seed_database.js",
+    "test": "jest",
+    "react-dev": "webpack --watch",
+    "start": "node server/index.js",
+    "docker-start": "DATABASE_HOST=database node db/controllers/seed_database.js && DATABASE_HOST=database node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bamboo-connection/map-side-bar.git"
+  },
+  "author": "Paolo Z. Roxas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bamboo-connection/map-side-bar/issues"
+  },
+  "homepage": "https://github.com/bamboo-connection/map-side-bar#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "jest": "^22.4.2",
+    "jsdom": "^11.6.2",
+    "nodemon": "^1.17.1",
+    "sinon": "^4.4.2",
+    "style-loader": "^0.20.2",
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "google-maps-react": "^1.1.2",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.0.6",
+    "morgan": "^1.9.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "underscore": "^1.8.3"
+  },
+  "jest": {}
+}

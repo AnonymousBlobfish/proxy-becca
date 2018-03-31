@@ -1,0 +1,124 @@
+body {
+  background-color: #f1f1f2;
+}
+
+.sidebar-flexbox-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-flexbox-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#sidebar-app {
+
+  justify-content: flex-end;
+}
+
+.sidebar-app {
+  width: 300px;
+  padding: 10px;
+  background-color: white;
+
+  font-family: 'raleway', sans-serif;
+  font-size: 12px;
+}
+
+.sidebar-sidebar-info-list {
+  letter-spacing: 0.1em;
+}
+
+.sidebar-info-list-element {
+  width: 85%;
+  justify-content: flex-start;
+}
+
+.sidebar-info-list-element-icon {
+  padding: 8px;
+  color: #ae002f;
+}
+
+.sidebar-anchor {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-anchor:hover {
+  color: #ae002f;
+}
+
+.sidebar-info-list-text {
+  padding: 10px;
+}
+
+.sidebar-info-list-text:hover {
+  color: #ae002f;
+  cursor: pointer;
+}
+
+.sidebar-opening-hours-title {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sidebar-opening-hours-title:hover {
+  color: #ae002f;
+}
+
+.sidebar-expand-arrow {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.sidebar-periods {
+  justify-content: left;
+  align-items: stretch;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.sidebar-periods-element {
+  padding: 5px 0 0 40px;
+}
+
+.sidebar-open-now-text {
+  font-weight: bold;
+}
+
+.sidebar-periods-element-info {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.sidebar-periods-element-info-additional {
+  width: 100%;
+  align-content: right;
+}
+
+.sidebar-periods-element-time {
+  text-align: right;
+}
+
+.sidebar-map-container {
+  height: 320px;
+  width: 280px;
+  padding: 10px 0 10px 0;
+}
+
+.sidebar-map-container > div {
+  /* necessary to overwrite the styling
+  of an npm package. Do not remove */
+  height: 320px !important;
+  width: 280px !important;
+}

@@ -1,0 +1,12 @@
+version: '3'
+services:
+  sidebar:
+    build: .
+    depends_on:
+      - 'database'
+    ports:
+      - '3003:3003'
+    links:
+      - 'database'
+  database:
+    image: mongo:latest

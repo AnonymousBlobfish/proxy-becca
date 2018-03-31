@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  gallery:
+    build: .
+    depends_on:
+      - 'database'
+    ports:
+      - '80:3001'
+
+  database:
+    image: mongo:3.6.2
